@@ -1,22 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+   color: #1e7fdd
+}
+
 body {
-    background-color: black;
+    background-color: #1f2223;
     color: white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 input {
-    width: 100%;
+    padding: 14px 16px;
+    width: 340px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px white;
+    background-color: #181a1b;
+    color: white;
 }
 
+input::placeholder {
+    color: #eee;
+}
+
+/* Login Page */
 #loginBody {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    transform: translateY(35%);
+    transform: translateY(45%);
 }
 
+#loginBody header {
+    margin-bottom: 5vh;
+}
 #loginBody img {
     transform: translateX(-9%);
-    width: 40vh;
+    width: 50vh;
 }
 
 #loginBody form {
@@ -26,25 +51,16 @@ input {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 5vh;
-    gap: 10px;
-    background-color: darkslategray;
+    gap: 18px;
+    background-color: #181a1b;
     padding: 5vh;
-    border-radius: 3vh;
+    border-radius: 2vh;
 }
 
 #loginBody p {
-    font-size: 24px;
+    font-size: 30px;
     width: 75vh;
     margin: 0;
-}
-
-#loginBody input {
-    padding: 14px 16px;
-    width: 330px;
-    border-radius: 6px;
-    outline: none;
-    border: none;
 }
 
 #loginBody button {
@@ -52,25 +68,122 @@ input {
     border: none;
     border-radius: 6px;
     padding: 10px 15px;
+    line-height: 21px;
     color: white;
-    width: 362px;
-}
-
-#loginBody #nameAndSurname {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    width: 341px;
+    cursor: pointer;
 }
 
 #loginBody #createNewAccount {
     background-color: rgb(43, 131, 26);
+    width: 35vh;
+    padding: 15px 0 15px 0;
+    line-height: 21px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
-#signUpBody {
+#actioanableQuestions {
+    color: #1e7fdd;
+}
+
+.lineWrapper {
+    border-bottom: solid 1px white;
+}
+
+.loginBodyLine {
+    width: 52vh;
+}
+
+/* Sign Up Page */
+#signUpBody, #signUpBody form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+}
+
+.signUpBodyLine {
+    width: 70vh;
+}
+
+#signUpFormHeader {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#signUpBody header {
+    text-align: center;
+}
+
+#signUpBody header img {
+    width: 50vh;
+}
+
+#signUpBody form {
+    background-color: #181a1b;
+    border-radius: 2vh;
+    max-width: 70vh;
+    padding: 5vh;
+}
+
+#signUpBody input {
+    width: 59vh;
+}
+
+#nameAndSurname input {
+    width: 29vh;
+    margin: 1px;
+}
+
+#signUpBody button {
+    padding: 9px 20px;
+    width: 30vh;
+    background-color: green;
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signUpBody a {
+    text-decoration: none;
+    margin: 15px 0 -15px;
+}
+
+#signUpBody p {
+    margin: 10px 0 10px ;
+}
+
+#birthday select {
+    width: 124px;
+    background: none;
+    color: white;
+    border-radius: 6px;
+    padding: 1vh;
+}
+
+#birthday select option {
+    color: #181a1b;
+}
+
+#gender {
+    margin: 0 auto;
+}
+
+#gender label {
+    margin-right: 7vh;
+}
+
+#gender input[type=radio] {
+    margin: 8px;
+    max-width: fit-content;
 }

@@ -8,18 +8,72 @@
 </head>
 <body id="signUpBody">
     <header>
-        <h1>Sign Up</h1>
-        <p>It's quick and easy.</p>
+        <img src="./4lCu2zih0ca.svg" alt="Facebook Logo">
     </header>
     <main>
         <form action="">
+            <div id="signUpFormHeader">
+                <h1>Create a new account</h1>
+                <p>It's quick and easy.</p>
+            </div>
+            <div class="lineWrapper signUpBodyLine"></div>
             <div id="nameAndSurname">
                 <input id="name" type="text" placeholder="First Name">
                 <input id="surname" type="text" placeholder="Last Name">
             </div>
             <input id="email" type="email" placeholder="Mobile Number or Email">
             <input id="password" type="password" placeholder="New Password">
-        </form>
+            <div id="birthday">
+                <p>Birthday</p>
+                <select name="birthday" id="birthdayMonth">
+                    <option value="">Month</option>
+                </select>
+                <script>
+                    var select = document.getElementById("birthdayMonth");
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    for(var i = 0; i < months.length; i++){
+                        var option = document.createElement("OPTION"),
+                        txt = document.createTextNode(months[i]);
+                        option.appendChild(txt);
+                        option.setAttribute("value",months[i]);
+                        select.insertBefore(option,select.lastChild);
+                    }
+                </script>            
+                <select name="birthday" id="birthdayDay">
+                    <option value="">Day</option>
+                    <script>
+                        for(var i = 1; i <= 31; i++){
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                        }
+                    </script>
+                </select>
+                <select name="birthday" id="birthdayYear">
+                    <option value="">Year</option>
+                    <script>
+                        var year = new Date().getFullYear();
+                        var earliestYear = year - 100;
+                        for(var i = year; i >= earliestYear; i--){
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                        }
+                    </script>
+                </select>
+            </div>
+            <div id="gender">
+                <p>Gender</p>
+                <input type="radio" name="gender" id="genderMale" value="male">
+                <label for="genderMale">Male</label>
+                <input type="radio" name="gender" id="genderFemale" value="female">
+                <label for="genderFemale">Female</label>
+                <input type="radio" name="gender" id="genderCustom">
+                <label for="genderCustom">Custom</label>
+            </div>
+            </div>
+        </div>
+        <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.</p>
+        <p>By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+        <button type="submit">Sign Up</button>
+        <a href="./login.html">Already have an account?</p>
+    </form>
     </main>
 </body>
 </html>
