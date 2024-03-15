@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up Facebook</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="loginBody">
+    <header>
+        <img src="./4lCu2zih0ca.svg" alt="Facebook Logo">
+        <p>Connect with friends and the world around you on Facebook.</p>
+    </header>
+    <main>
+        <form action="">
+            <input type="text" placeholder="Email or Phone Number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <span>Forgot Password?</span>
+            <span>-</span>
+            <button id="createNewAccount" type="button">Create New Account</button>
+        </form>
+        
+    </main>
+    <script>
+        document.getElementById("createNewAccount").onclick = function () {
+        location.href = "./signup.html";
+        };
+    </script>
+</body>
+</html>

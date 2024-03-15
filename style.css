@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+input {
+    width: 100%;
+}
+
+#loginBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(35%);
+}
+
+#loginBody img {
+    transform: translateX(-9%);
+    width: 40vh;
+}
+
+#loginBody form {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5vh;
+    gap: 10px;
+    background-color: darkslategray;
+    padding: 5vh;
+    border-radius: 3vh;
+}
+
+#loginBody p {
+    font-size: 24px;
+    width: 75vh;
+    margin: 0;
+}
+
+#loginBody input {
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+#loginBody button {
+    background-color: rgb(0, 76, 199);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: white;
+    width: 362px;
+}
+
+#loginBody #nameAndSurname {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 50%;
+}
+
+#loginBody #createNewAccount {
+    background-color: rgb(43, 131, 26);
+}
+
+#signUpBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
