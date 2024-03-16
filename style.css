@@ -160,7 +160,7 @@ input::placeholder {
 }
 
 #signUpBody p {
-    margin: 10px 0 10px ;
+    margin: 10px 1px 10px;
 }
 
 #birthday select {
@@ -175,6 +175,15 @@ input::placeholder {
     color: #181a1b;
 }
 
+#gender {
+    margin-left: 10vh;
+    width: 70vh;
+}
+
+#gender p {
+    margin-left: 2px;
+}
+
 #gender input[type=radio] {
     margin: 10px;
     max-width: fit-content;
@@ -186,8 +195,12 @@ input::placeholder {
     width: 19vh;
     border: solid 1px white;
     border-radius: 6px;
-    gap: 8px;
+    gap: 3px;
     margin-left: 3px;
+}
+
+.genderType label {
+    margin-top: 2px;
 }
 
 #genderCustomName {

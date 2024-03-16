@@ -73,16 +73,24 @@
                     <label for="genderCustom">Custom</label>
                     <script>
                         function createInput() {
-                            var input = document.createElement('input');
-                            input.id = 'genderCustomName';
-                            input.placeholder = 'Name Your Gender'
+                            var input = document.createElement("input");
+                            input.id = "genderCustomName";
+                            input.placeholder = "Enter Your Gender";
                             document.body.appendChild(input);
-                            document.getElementById('genderCustom').removeEventListener("click", createInput);
-                            
                             document.getElementById('1stPUnderInput').style.marginTop = '10vh';
                         }
                     
+                        function removeInput() {
+                            var input = document.getElementById("genderCustomName");
+                            if (input) {
+                                document.body.removeChild(input);
+                                document.getElementById('1stPUnderInput').style.marginTop = '0';
+                            }
+                        }
+                    
                         document.getElementById('genderCustom').addEventListener("click", createInput);
+                        document.getElementById('genderMale').addEventListener("click", removeInput);
+                        document.getElementById('genderFemale').addEventListener("click", removeInput);
                     </script>
                 </div>
             </div>
