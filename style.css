@@ -175,15 +175,22 @@ input::placeholder {
     color: #181a1b;
 }
 
-#gender {
-    margin: 0 auto;
-}
-
-#gender label {
-    margin-right: 7vh;
-}
-
 #gender input[type=radio] {
-    margin: 8px;
+    margin: 10px;
     max-width: fit-content;
+}
+
+.genderType {
+    display: inline-flex;
+    align-items: center;
+    width: 19vh;
+    border: solid 1px white;
+    border-radius: 6px;
+    gap: 8px;
+    margin-left: 3px;
+}
+
+#genderCustomName {
+    position: absolute;
+    top: 93vh;
 }
