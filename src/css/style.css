@@ -118,6 +118,10 @@ input::placeholder {
     text-align: center;
 }
 
+#nameAndSurname {
+    margin-top: 3vh;
+}
+
 #signUpBody header {
     text-align: center;
 }
@@ -164,10 +168,12 @@ input::placeholder {
 }
 
 #birthday select {
-    width: 124px;
+    width: 132px;
     background: none;
     color: white;
     border-radius: 6px;
+    border-width: 2px;
+    border-color: white;
     padding: 1vh;
 }
 
